@@ -1,0 +1,168 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.headerbar {
+    background-color: black;
+    padding: 0.2rem;
+}
+
+.headertext{
+    font-family: 'Asap Condensed', sans-serif;
+    color: antiquewhite;
+    font-size: small;
+    text-align: center;
+}
+
+.navbar{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 2.5rem;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar-links:hover{
+    font-weight: bold;
+}
+
+.navbar-links:active{
+    background-color: rgb(22, 21, 21);
+}
+
+.mainbar-logo{
+    display: inline-block;
+    width: 28%;
+    vertical-align: middle;
+}
+
+.mainbar-title{
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+    line-height: 76px;
+    font-family: 'Asap Condensed', sans-serif;
+    background-image: url(../recursos/imagenes/banner.jpg);
+    color: white;
+}
+
+
+.navbar-links{
+    color: white;
+    font-size: 20px;
+    font-family: 'Asap Condensed', sans-serif;
+    text-decoration: none;
+    background-color: black;
+    padding: 4px 32px;
+}
+
+.banner-home{
+    margin: 10px 0px 20px 0px;
+    background-image: url(../recursos/imagenes/banner-arena.jpg);
+    vertical-align: middle;
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+    font-family: 'Asap Condensed', sans-serif;
+    font-style: oblique;
+    font-size: x-large;
+    color: rgb(69, 72, 72);
+}
+
+.section-cards{
+    display: flex;
+}
+
+
+.card{
+    font-family: 'Asap Condensed', sans-serif; 
+    text-align: center;
+    background-color: rgba(214, 206, 206, 0.614);
+    box-shadow: 0px 0px 7px -155px rgba(0,0,0,0.59);
+    padding: 10px;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo{
+    width: 33%;
+    margin-top: 20px;
+
+    font-family: 'Asap Condensed', sans-serif; 
+    text-align: center;
+}
+
+.photos-promo{
+    display: flex;
+}
+
+.photo-promo{
+    margin-top: 20px;
+    width: 48%;
+
+    font-family: 'Asap Condensed', sans-serif; 
+    text-align: center;
+    font-size: large;
+}
+
+#estilo-footer{
+    margin-top: 10px;
+    color: rgb(142, 157, 152);
+    font-family:'Asap Condensed', sans-serif;
+    background-color: black;
+}
+
+.textcontainer-nosotros{
+    display: flex;
+}
+
+.textbox-nosotros{
+    margin: 20px;
+    padding: 20px;
+    width: 48%;
+    font-family: 'Asap Condensed', sans-serif; 
+    text-align: center;
+    font-size: large;
+}
+
+.text-multimedia{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.multimedia{
+    margin: 20px;
+    padding: 20px;
+    width: 48%;
+    font-family: 'Asap Condensed', sans-serif; 
+    text-align: center;
+    font-size: large;
+}
+
+.container-contact{
+    display: flex;
+    justify-content: center;
+}
+
+.box-contact{
+    font-family: 'Asap Condensed', sans-serif; 
+    text-align: center;
+    font-size: larger;
+
+    padding-top: 50px;
+    width: 45%;
+}
+
+.grid-container{
+	display: grid;
+}
