@@ -1,6 +1,7 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .headerbar {
@@ -15,22 +16,22 @@
     text-align: center;
 }
 
-.navbar{
+.navigation-bar{
     text-align: center;
     display: flex;
     justify-content: center;
     margin-left: 2.5rem;
 }
 
-.navbar li{
+.navigation-bar li{
     list-style: none;
 }
 
-.navbar-links:hover{
+.navigation-bar-links:hover{
     font-weight: bold;
 }
 
-.navbar-links:active{
+.navigation-bar-links:active{
     background-color: rgb(22, 21, 21);
 }
 
@@ -53,7 +54,7 @@
 }
 
 
-.navbar-links{
+.navigation-bar-links{
     color: white;
     font-size: 20px;
     font-family: 'Asap Condensed', sans-serif;
@@ -121,38 +122,32 @@
     background-color: black;
 }
 
-.textcontainer-nosotros{
-    display: flex;
-}
 
 .textbox-nosotros{
-    margin: 20px;
     padding: 20px;
-    width: 48%;
     font-family: 'Asap Condensed', sans-serif; 
     text-align: center;
     font-size: large;
 }
 
 .text-multimedia{
-    display: flex;
     justify-content: center;
     align-items: flex-start;
 }
 
 .multimedia{
-    margin: 20px;
     padding: 20px;
-    width: 48%;
     font-family: 'Asap Condensed', sans-serif; 
     text-align: center;
     font-size: large;
 }
 
+/*
 .container-contact{
     display: flex;
     justify-content: center;
 }
+*/
 
 .box-contact{
     font-family: 'Asap Condensed', sans-serif; 
@@ -160,9 +155,43 @@
     font-size: larger;
 
     padding-top: 50px;
-    width: 45%;
 }
 
-.grid-container{
-	display: grid;
+/*Agregando estilos a las clases de bootstrap*/
+.nav-link:hover {
+    font-weight: bold;
 }
+
+.nav-link:active {
+    background-color: rgb(22, 21, 21);
+}
+
+.nav-link {
+    font-family: 'Asap Condensed', sans-serif;
+}
+
+#navbarSupportedContent {
+    justify-content: end;
+}
+
+.navbar-brand img {
+    display: none;
+}
+
+/*Main y navbar mobile*/
+@media (max-width: 768px) {
+    .navbar-brand img {
+        display: block;
+        width: 150px;
+    }
+    .mainbar-logo {
+        display: none;
+    }
+    .mainbar-title {
+        width: 100%;
+    }
+}
+
+
+
+
