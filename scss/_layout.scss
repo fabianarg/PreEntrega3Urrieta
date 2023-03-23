@@ -1,0 +1,51 @@
+/*Cards de la pagina principal*/
+.card-index{
+    font-family: $font-principal; 
+    text-align: center;
+    background-color: $color-regular;
+}
+
+/*Catalogo de productos*/
+.photo-gallery{
+    margin-top: $margin-regular;
+    font-family: $font-principal; 
+    text-align: center;
+}
+
+/*Catalogo de promocion*/
+.photo-promo{
+    margin-top: $margin-regular;
+    font-family: $font-principal; 
+    text-align: center;
+    font-size: large;
+}
+
+/*Caja de texto*/
+.textbox-nosotros{
+    padding: $margin-regular;
+    font-family: $font-principal; 
+    text-align: center;
+    font-size: large;
+}
+
+/*Caja de texto-video*/
+.text-multimedia{
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*Video*/
+.multimedia{
+    padding: $margin-regular;
+    font-family: $font-principal; 
+    text-align: center;
+    font-size: large;
+}
+
+/*Cajas de texto-formulario*/
+.box-contact{
+    font-family: $font-principal; 
+    text-align: center;
+    font-size: larger;
+    padding-top: $margin-regular + 30px;
+}

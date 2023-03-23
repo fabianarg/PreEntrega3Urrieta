@@ -1,0 +1,77 @@
+/*Barra cabecera del sitio*/
+.headerbar {
+    background-color: black;
+    padding: 0.2rem;
+}
+
+.headertext{
+    font-family: $font-principal;
+    color: antiquewhite;
+    font-size: small;
+    text-align: center;
+}
+
+/*Logo*/
+.mainbar-logo{
+    display: inline-block;
+    width: 28%;
+    vertical-align: middle;
+}
+
+/*Barra principal, titulo de cada pagina*/
+.mainbar-title{
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+    line-height: 76px;
+    font-family: $font-principal;
+    background-image: url(../recursos/imagenes/banner.jpg);
+    color: white;
+}
+
+.mainbar-title{
+    &:hover {
+        transform:scale(1,1.1);
+    }
+}
+
+/*Agregando estilos a las clases de bootstrap (barra de navegacion)*/
+.nav-link {
+    font-family: $font-principal;
+        &:hover {
+            font-weight: bold;
+        }
+        &:active {
+            background-color: rgb(44, 60, 82);
+        }
+}
+
+.navbar {
+    background-image: $gradient-base;
+}
+
+#navbarSupportedContent {
+    justify-content: end;
+}
+
+.navbar-brand {
+    img {
+        display: none;
+    }
+}
+
+/*Main y navbar mobile*/
+@media (max-width: 768px) {
+    .navbar-brand img {
+        display: block;
+        width: 150px;
+    }
+    .mainbar-logo {
+        display: none;
+    }
+    .mainbar-title {
+        width: 100%;
+    }
+}

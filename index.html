@@ -4,17 +4,20 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--SEO-->
+    <meta name="description" content="Nos dedicamos a la fabricación y distribución de trajes de baño personalizados, utilizando materiales de calidad">
+    <meta name="keywords" content="TRAJES DE BAÑO, MALLAS, ROPA PLAYERA, MUJER, MALLA PLAYERA DAMA, ENTERIZOS">
     <!--Vincular el logo para que se vea la miniatura en la pestaña del navegador-->
     <link rel="shortcut icon" href="./recursos/logo/logo.jfif" type="image/x-icon"/>
     <!--Vincular la libreria booststrap descargada-->
     <link rel="stylesheet" href="./librerias/bootstrap-5.3.0-alpha1-dist/bootstrap/css/bootstrap.min.css">
     <!--Vincular la hoja de estilos css-->
-    <link rel="stylesheet" href="../estilos/estilos.css"/>
+    <link rel="stylesheet" href="./css/estilos.css"/>
     <!--Vincular la fuente descargada-->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&display=swap" rel="stylesheet"/>
-    <title>Home</title>
+    <title>Home | Agua salada swimwear</title>
   </head>
 
   <body>
@@ -32,24 +35,34 @@
         <h1 class="mainbar-title">INICIO</h1>
       </div>
 
-      <nav>
-        <ul class="navigation-bar">
-          <li>
-            <a class="navigation-bar-links" href="#">Inicio</a>
-          </li>
-          <li>
-            <a class="navigation-bar-links" href="./paginas/productos.html">Productos</a>
-          </li>
-          <li>
-            <a class="navigation-bar-links" href="./paginas/promociones.html">Promos</a>
-          </li>
-          <li>
-            <a class="navigation-bar-links" href="./paginas/nosotros.html">¿Quiénes somos?</a>
-          </li>
-          <li>
-            <a class="navigation-bar-links" href="./paginas/contacto.html">Contáctanos</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../recursos/logo/logo.jfif" alt="Logo-marca">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/promociones.html">Promociones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/nosotros.html">¿Quiénes somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/contacto.html">Contáctanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -57,41 +70,43 @@
       <h1>¡CARNAVAL 25% OFF!</h1>
     </div>
 
-    <div class="section-cards">
-      <div class="card card-one">
-        <h1>ELIGE TU TRAJE DE BAÑO IDEAL</h1>
-        <br/>
-        <p>
-          Entendemos que usar un traje de baño muchas veces supone un reto, para
-          nosotras es importante que te sientas cómoda al usar nuestros
-          productos, por ello tenemos varias opciones a elegir en nuestro
-          catálogo.
-        </p>
-        <br />
-        <img src="./recursos/imagenes/tdb-espalda.avif" alt="imagen-mujer-espalda" width="400px" height="600px"/>
-      </div>
-      <div class="card card-two">
-        <h1>PERSONALIZA TU PEDIDO</h1>
-        <br/>
-        <p>
-          En caso de no encontrar alguna pieza que te convenza por completo en
-          nuestro stock, nos puedes comentar la combinación de estampado, corte
-          y talla que te gustaría y procederemos a crear el modelo único para
-          ti.
-        </p>
-        <br/>
-        <img src="./recursos/imagenes/traje-naranja.avif" alt="imagen-mujer-trajedebano" width="400px" height="600px"/>
-      </div>
-      <div class="card card-three">
-        <h1>COMPLEMENTA CON ACCESORIOS</h1>
-        <br/>
-        <p>
-          Contamos con accesorios como lentes de sol, sombreros y bolsos para
-          complementar tu atuendo playero y que no se te escape ningún detalle,
-          no sólo agrega valor estético a tu outfit sino también mayor utilidad.
-        </p>
-        <br/>
-        <img src="./recursos/imagenes/lentes-sol.avif" alt="imagen-mujer-trajedebano" width="400px" height="600px"/>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="card-index col">
+          <h1>ELIGE TU TRAJE DE BAÑO IDEAL</h1>
+          <br/>
+          <p>
+            Entendemos que usar un traje de baño muchas veces supone un reto, para
+            nosotras es importante que te sientas cómoda al usar nuestros
+            productos, por ello tenemos varias opciones a elegir en nuestro
+            catálogo.
+          </p>
+          <br />
+          <img src="./recursos/imagenes/tdb-espalda.avif" alt="imagen-mujer-espalda" width="400px" height="600px"/>
+        </div>
+        <div class="card-index col">
+          <h1>PERSONALIZA TU PEDIDO</h1>
+          <br/>
+          <p>
+            En caso de no encontrar alguna pieza que te convenza por completo en
+            nuestro stock, nos puedes comentar la combinación de estampado, corte
+            y talla que te gustaría y procederemos a crear el modelo único para
+            ti.
+          </p>
+          <br/>
+          <img src="./recursos/imagenes/traje-naranja.avif" alt="imagen-mujer-trajedebano" width="400px" height="600px"/>
+        </div>
+        <div class="card-index col">
+          <h1>COMPLEMENTA CON ACCESORIOS</h1>
+          <br/>
+          <p>
+            Contamos con accesorios como lentes de sol, sombreros y bolsos para
+            complementar tu atuendo playero y que no se te escape ningún detalle,
+            no sólo agrega valor estético a tu outfit sino también mayor utilidad.
+          </p>
+          <br/>
+          <img src="./recursos/imagenes/lentes-sol.avif" alt="imagen-mujer-trajedebano" width="400px" height="600px"/>
+        </div>
       </div>
     </div>
 

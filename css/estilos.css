@@ -1,0 +1,174 @@
+/*Variables*/
+/*Importando hojas de estilo secundarias*/
+/*Barra cabecera del sitio*/
+.headerbar {
+  background-color: black;
+  padding: 0.2rem;
+}
+
+.headertext {
+  font-family: "Asap Condensed", sans-serif;
+  color: antiquewhite;
+  font-size: small;
+  text-align: center;
+}
+
+/*Logo*/
+.mainbar-logo {
+  display: inline-block;
+  width: 28%;
+  vertical-align: middle;
+}
+
+/*Barra principal, titulo de cada pagina*/
+.mainbar-title {
+  display: inline-block;
+  width: 70%;
+  vertical-align: middle;
+  text-align: center;
+  height: 100%;
+  line-height: 76px;
+  font-family: "Asap Condensed", sans-serif;
+  background-image: url(../recursos/imagenes/banner.jpg);
+  color: white;
+}
+
+.mainbar-title:hover {
+  transform: scale(1, 1.1);
+}
+
+/*Agregando estilos a las clases de bootstrap (barra de navegacion)*/
+.nav-link {
+  font-family: "Asap Condensed", sans-serif;
+}
+.nav-link:hover {
+  font-weight: bold;
+}
+.nav-link:active {
+  background-color: rgb(44, 60, 82);
+}
+
+.navbar {
+  background-image: linear-gradient(to left, rgb(26, 33, 64) 10.9%, rgb(81, 84, 115) 87.1%);
+}
+
+#navbarSupportedContent {
+  justify-content: end;
+}
+
+.navbar-brand img {
+  display: none;
+}
+
+/*Main y navbar mobile*/
+@media (max-width: 768px) {
+  .navbar-brand img {
+    display: block;
+    width: 150px;
+  }
+  .mainbar-logo {
+    display: none;
+  }
+  .mainbar-title {
+    width: 100%;
+  }
+}
+/*Cards de la pagina principal*/
+.card-index {
+  font-family: "Asap Condensed", sans-serif;
+  text-align: center;
+  background-color: rgba(175, 212, 212, 0.684);
+}
+
+/*Catalogo de productos*/
+.photo-gallery {
+  margin-top: 20px;
+  font-family: "Asap Condensed", sans-serif;
+  text-align: center;
+}
+
+/*Catalogo de promocion*/
+.photo-promo {
+  margin-top: 20px;
+  font-family: "Asap Condensed", sans-serif;
+  text-align: center;
+  font-size: large;
+}
+
+/*Caja de texto*/
+.textbox-nosotros {
+  padding: 20px;
+  font-family: "Asap Condensed", sans-serif;
+  text-align: center;
+  font-size: large;
+}
+
+/*Caja de texto-video*/
+.text-multimedia {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/*Video*/
+.multimedia {
+  padding: 20px;
+  font-family: "Asap Condensed", sans-serif;
+  text-align: center;
+  font-size: large;
+}
+
+/*Cajas de texto-formulario*/
+.box-contact {
+  font-family: "Asap Condensed", sans-serif;
+  text-align: center;
+  font-size: larger;
+  padding-top: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner-home {
+  background-image: url(../recursos/imagenes/banner-arena.jpg);
+  vertical-align: middle;
+  background-size: cover;
+  height: 280px;
+}
+.banner-home h1 {
+  text-align: center;
+  font-family: "Asap Condensed", sans-serif;
+  font-style: oblique;
+  font-size: xx-large;
+  color: rgb(69, 72, 72);
+}
+
+/*Agregando una transicion al banner*/
+.banner-home h1 {
+  transition: 2s;
+}
+.banner-home h1:hover {
+  transform: translate(0, 140px);
+}
+
+#estilo-footer {
+  color: rgba(175, 212, 212, 0.684);
+  font-family: "Asap Condensed", sans-serif;
+  background-image: linear-gradient(to left, rgb(26, 33, 64) 10.9%, rgb(81, 84, 115) 87.1%);
+}
+
+/*Responsive*/
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .card-index h1 {
+    min-height: 96px;
+  }
+}
+@media (max-width: 1280px) {
+  .banner-home {
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
