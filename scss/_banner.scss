@@ -1,0 +1,23 @@
+.banner-home {
+    background-image: url(../recursos/imagenes/banner-arena.jpg);
+    vertical-align: middle;
+    background-size: cover;
+    height: 280px;
+    h1 {
+        text-align: center;
+        font-family: $font-principal;
+        font-style: oblique;
+        font-size: xx-large;
+        color: rgb(69, 72, 72);
+    }
+}
+
+/*Agregando una transicion al banner*/
+.banner-home {
+    h1 {
+        transition: 2s;
+            &:hover {
+             transform: translate(0, 140px);
+            }
+    }
+}

@@ -1,0 +1,14 @@
+/*Responsive*/
+@media (min-width: 1280px) and (max-width: 1440px) {
+    .card-index {
+        h1 {
+        min-height: 96px;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .banner-home {
+        height: 200px;
+    }
+}

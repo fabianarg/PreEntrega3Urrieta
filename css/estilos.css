@@ -1,6 +1,4 @@
-/*Variables*/
-/*Importando hojas de estilo secundarias*/
-/*Barra cabecera del sitio*/
+/*Importando hojas de estilo secundarias*/ /*variables*/ /*Barra cabecera del sitio*/
 .headerbar {
   background-color: black;
   padding: 0.2rem;
@@ -85,6 +83,8 @@
   margin-top: 20px;
   font-family: "Asap Condensed", sans-serif;
   text-align: center;
+  border-top-left-radius: var(--bs-card-inner-border-radius);
+  border-top-right-radius: var(--bs-card-inner-border-radius);
 }
 
 /*Catalogo de promocion*/
@@ -125,12 +125,17 @@
   padding-top: 50px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/*Responsive*/
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .card-index h1 {
+    min-height: 96px;
+  }
 }
-
+@media (max-width: 1280px) {
+  .banner-home {
+    height: 200px;
+  }
+}
 .banner-home {
   background-image: url(../recursos/imagenes/banner-arena.jpg);
   vertical-align: middle;
@@ -157,18 +162,13 @@
   color: rgba(175, 212, 212, 0.684);
   font-family: "Asap Condensed", sans-serif;
   background-image: linear-gradient(to left, rgb(26, 33, 64) 10.9%, rgb(81, 84, 115) 87.1%);
+  height: 30px;
 }
 
-/*Responsive*/
-@media (min-width: 1280px) and (max-width: 1440px) {
-  .card-index h1 {
-    min-height: 96px;
-  }
-}
-@media (max-width: 1280px) {
-  .banner-home {
-    height: 200px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=estilos.css.map */

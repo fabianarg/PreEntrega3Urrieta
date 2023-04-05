@@ -10,6 +10,8 @@
     margin-top: $margin-regular;
     font-family: $font-principal; 
     text-align: center;
+    border-top-left-radius: var(--bs-card-inner-border-radius);
+    border-top-right-radius: var(--bs-card-inner-border-radius);
 }
 
 /*Catalogo de promocion*/

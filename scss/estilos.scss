@@ -1,61 +1,13 @@
-/*Variables*/
-$font-principal: 'Asap Condensed', sans-serif;
-$margin-regular: 20px;
-$color-regular: rgba(175, 212, 212, 0.684);
-$gradient-base: linear-gradient(to left,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
-
 /*Importando hojas de estilo secundarias*/
+@import "variable";
 @import "header";
 @import "layout";
+@import "responsive";
+@import "banner";
+@import "footer";
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-
-.banner-home {
-    background-image: url(../recursos/imagenes/banner-arena.jpg);
-    vertical-align: middle;
-    background-size: cover;
-    height: 280px;
-    h1 {
-        text-align: center;
-        font-family: $font-principal;
-        font-style: oblique;
-        font-size: xx-large;
-        color: rgb(69, 72, 72);
-    }
-}
-
-/*Agregando una transicion al banner*/
-.banner-home {
-    h1 {
-        transition: 2s;
-            &:hover {
-             transform: translate(0, 140px);
-            }
-    }
-}
-
-#estilo-footer {
-    color: $color-regular;
-    font-family: $font-principal;
-    background-image: $gradient-base;
-}
-
-/*Responsive*/
-@media (min-width: 1280px) and (max-width: 1440px) {
-    .card-index {
-        h1 {
-        min-height: 96px;
-        }
-    }
-}
-
-@media (max-width: 1280px) {
-    .banner-home {
-        height: 200px;
-    }
 }
